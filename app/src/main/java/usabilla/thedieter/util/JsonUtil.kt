@@ -3,7 +3,7 @@ package usabilla.thedieter.util
 import android.content.Context
 import com.google.gson.GsonBuilder
 import org.json.JSONArray
-import usabilla.thedieter.section.feedback.Feedback
+import usabilla.thedieter.main.Feedback
 
 fun loadFeedbacks(context: Context): MutableList<Feedback> {
     val feedbackList = ArrayList<Feedback>()

@@ -1,20 +1,22 @@
-package usabilla.thedieter.section.feedback
+package usabilla.thedieter.main
 
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Feedback(val message: String, val mood: Int) : Parcelable {
+data class Feedback(val comment: String, val rating: Int, val date: String) : Parcelable {
 
     constructor(source: Parcel) : this(
             source.readString(),
-            source.readInt()
+            source.readInt(),
+            source.readString()
     )
 
     override fun describeContents() = 0
 
     override fun writeToParcel(dest: Parcel, flags: Int) = with(dest) {
-        writeString(message)
-        writeInt(mood)
+        writeString(comment)
+        writeInt(rating)
+        writeString(date)
     }
 
     companion object {

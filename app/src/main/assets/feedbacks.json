@@ -1,10 +1,27 @@
 [
   {
-    "message": "https://pbs.twimg.com/profile_images/572905100960485376/GK09QnNG.jpeg",
-    "mood": 0
+    "comment": "Very user-friendly and easy to use. Also very competent and engaging Support.",
+    "rating": 5,
+    "date": "15 August 2017, 12:04:07"
   },
   {
-    "message": "https://pbs.twimg.com/profile_images/572905100960485376/GK09QnNG.jpeg",
-    "mood": 2
-  }
+    "comment": "Hi there, I just requested a demo, but I'm really after some price indication and compliance information in regards to user data collection of those leaving feedback - I'm asking this on behalf of a public service organisation in the UK (Transport for London / tfl.gov.uk ) Kind regards, Elmer Zinkhann",
+    "rating": 4,
+    "date": "11 April 2017, 14:29:03"
+  },
+  {
+    "comment": "It would be super useful to have a 'preview' option directly from the hamburger dots menu. Now I have to go into Edit mode to see what the survey looks like",
+    "rating": 3,
+    "date": "06 June 2017, 11:08:07"
+  },
+  {
+    "comment": "I would like an easy way to respond to the user's feedback. It seems you used to provide this, but now I don't see how to quickly reply without copying the email address and opening my email client.",
+    "rating": 2,
+    "date": "09 May 2017, 19:21:07"
+  },
+  {
+    "comment": "I’m struggling to view all the feedback, and a message appears saying that the page doesn’t exist",
+    "rating": 1,
+    "date": "08 August 2017, 14:29:03"
+  },
 ]

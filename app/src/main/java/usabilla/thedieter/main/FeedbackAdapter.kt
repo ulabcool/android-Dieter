@@ -1,4 +1,4 @@
-package usabilla.thedieter.section.feedback
+package usabilla.thedieter.main
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -26,18 +26,23 @@ class FeedbackAdapter(context: Context, feedbacks: List<Feedback>) : ArrayAdapte
 
         val feedback = getItem(position)
 
-        holder.text.text = feedback!!.message
+        holder.message.text = feedback!!.comment
+        holder.date.text = feedback.date
+
+        when(feedback.rating) {
+            1 -> holder.icon.setImageResource(R.drawable.ic_mood0)
+            2 -> holder.icon.setImageResource(R.drawable.ic_mood1)
+            3 -> holder.icon.setImageResource(R.drawable.ic_mood2)
+            4 -> holder.icon.setImageResource(R.drawable.ic_mood3)
+            else -> holder.icon.setImageResource(R.drawable.ic_mood4)
+        }
         return contentView
     }
 
     private class ViewHolder(view: View) {
-        var text: TextView
-        var icon: ImageView
-
-        init {
-            text = view.findViewById<View>(R.id.feedbackText) as TextView
-            icon = view.findViewById<View>(R.id.feedbackMood) as ImageView
-        }
+        var message: TextView = view.findViewById<View>(R.id.feedbackText) as TextView
+        var date: TextView = view.findViewById<View>(R.id.feedbackDate) as TextView
+        var icon: ImageView = view.findViewById<View>(R.id.feedbackMood) as ImageView
     }
 
 }
